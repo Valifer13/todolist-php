@@ -26,7 +26,7 @@
 <body>
     <!-- Desktop Navbar Start -->
     <nav class="container-fluid navbar" id="navbar">
-        <a href="<?= BASE_URL ?>" class="icon-brand"><img src="<?= BASE_URL ?>/img/icon.svg" alt="icon">
+        <a href="<?= BASE_URL ?>" class="icon-brand"><img src="<?= BASE_URL ?>/img/icon_dark.svg" alt="icon">
             <p>ToDoList</p>
         </a>
         <div class="desktop-navbar">
@@ -47,14 +47,14 @@
 
     <!-- Mobile Sidebar Start -->
     <div class="side-navbar">
+        <button type="button">X</button>
         <div class="container">
             <div class="nav-links">
                 <a href="<?= BASE_URL ?>" class="nav-link">Home</a>
                 <a href="<?= BASE_URL ?>/docs" class="nav-link">Docs</a>
                 <a href="<?= BASE_URL ?>/products" class="nav-link">Products</a>
                 <a href="<?= BASE_URL ?>/about" class="nav-link">About</a>
-                <button type="button" class="btn btn-black"
-                    onclick="gotoURL('http://localhost/todolist-php/public/dashboard')">Get Started</button>
+                <a href="<?= BASE_URL ?>/dashboard" class="nav-link">Get Started</a>
             </div>
         </div>
     </div>

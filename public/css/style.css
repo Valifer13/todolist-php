@@ -78,6 +78,60 @@ body {
 
 .side-navbar {
     display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 1);
+    height: 100vh;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition: transform .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
+    -moz-transition: transform .3s ease-in-out;
+    -ms-transition: transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
+}
+
+.side-navbar.show {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.side-navbar button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background: none;
+    color: white;
+    border: none;
+}
+
+.side-navbar .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 50%;
+}
+
+.side-navbar .nav-links:first-child {
+    border-top: #fff 1px solid;
+}
+
+.side-navbar .nav-links .nav-link {
+    color: white;
+    border-bottom: #fff 1px solid;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
 }
 
 @media only screen and (max-width: 460px) {
@@ -91,12 +145,6 @@ body {
 
     .side-navbar {
         display: block;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 50vw;
-        background-color: rgba(0, 0, 0, .5);
-        height: 100vh;
     }
 }
 
