@@ -29,12 +29,23 @@
         <a href="<?= BASE_URL ?>" class="icon-brand"><img src="<?= BASE_URL ?>/img/icon.svg" alt="icon">
             <p>ToDoList</p>
         </a>
-        <div class="nav-links">
-            <a href="<?= BASE_URL ?>" class="nav-link">Home</a>
-            <a href="<?= BASE_URL ?>/docs" class="nav-link">Docs</a>
-            <a href="<?= BASE_URL ?>/products" class="nav-link">Products</a>
-            <a href="<?= BASE_URL ?>/about" class="nav-link">About</a>
-            <button type="button" class="btn btn-black" onclick="gotoURL('http://localhost/todolist-php/public/dashboard')">Get Started</button>
+        <div class="desktop-navbar">
+            <div class="nav-links">
+                <a href="<?= BASE_URL ?>" class="nav-link">Home</a>
+                <a href="<?= BASE_URL ?>/docs" class="nav-link">Docs</a>
+                <a href="<?= BASE_URL ?>/products" class="nav-link">Products</a>
+                <a href="<?= BASE_URL ?>/about" class="nav-link">About</a>
+                <button type="button" class="btn btn-black"
+                    onclick="gotoURL('http://localhost/todolist-php/public/dashboard')">Get Started</button>
+            </div>
+        </div>
+        <div class="mobile-navbar">
+            <h1>X</h1>
         </div>
     </nav>
     <!-- Desktop Navbar End -->
+
+    <!-- Mobile Sidebar Start -->
+    <div class="side-navbar">
+    </div>
+    <!-- Mobile Sidebar End -->
