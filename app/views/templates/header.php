@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $data['title'] ?> Page</title>
-    <link rel="shortcut icon" href="<?= BASE_URL ?>/img/icon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="<?= BASE_URL ?>/img/icon_light.svg" type="image/x-icon" id="tab-icon">
     <link rel="stylesheet" href="<?= BASE_URL ?>/css/style.css">
 
     <!-- Poppins Font -->
@@ -47,5 +47,15 @@
 
     <!-- Mobile Sidebar Start -->
     <div class="side-navbar">
+        <div class="container">
+            <div class="nav-links">
+                <a href="<?= BASE_URL ?>" class="nav-link">Home</a>
+                <a href="<?= BASE_URL ?>/docs" class="nav-link">Docs</a>
+                <a href="<?= BASE_URL ?>/products" class="nav-link">Products</a>
+                <a href="<?= BASE_URL ?>/about" class="nav-link">About</a>
+                <button type="button" class="btn btn-black"
+                    onclick="gotoURL('http://localhost/todolist-php/public/dashboard')">Get Started</button>
+            </div>
+        </div>
     </div>
     <!-- Mobile Sidebar End -->

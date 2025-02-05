@@ -12,3 +12,5 @@ window.addEventListener('scroll', () => {
         navbar.style.borderBottom = 'none';
     }
 })
+
+//* Colorscheme

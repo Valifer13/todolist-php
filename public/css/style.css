@@ -76,13 +76,27 @@ body {
     display: none;
 }
 
-@media only screen and (max-width: 360px) {
+.side-navbar {
+    display: none;
+}
+
+@media only screen and (max-width: 460px) {
     .mobile-navbar {
         display: block;
     }
 
     .desktop-navbar {
         display: none;
+    }
+
+    .side-navbar {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50vw;
+        background-color: rgba(0, 0, 0, .5);
+        height: 100vh;
     }
 }
 
