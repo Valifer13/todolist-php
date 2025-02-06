@@ -12,7 +12,8 @@ body {
     font-family: "Poppins", serif;
 }
 
-/* Navbar */
+/** Navbar */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -72,7 +73,25 @@ body {
     background-color: rgba(0, 0, 0, .1);
 }
 
-/* Mobile Navbar */
+.nav-links .btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: "Inter", serif;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: none;
+    background: none;
+    transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    -ms-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+}
+
+/** Mobile Navbar */
 .mobile-navbar {
     display: none;
 }
@@ -171,6 +190,45 @@ body {
 }
 
 
+/** Hero Section */
+.hero {
+    padding: 80px 0;
+    display: grid;
+    gap: 3rem;
+}
+
+.hero .content {
+    display: flex;
+}
+
+.hero .content .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero .content .text-content h1 {
+    font-size: 3em;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero .content .text-content p {
+    font-size: 2em;
+}
+
+.hero .showcase img {
+    width: 100%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 0 5px 1px #afafaf;
+}
+
+
+/** Operation in Mobile View */
 @media only screen and (max-width: 460px) {
     .mobile-navbar {
         display: block;
@@ -185,12 +243,7 @@ body {
     }
 }
 
-/* 
- *===============
- * Utility Class
- *===============
-*/
-
+/** Utility Class */
 .container-fluids {
     width: 100%;
 }
@@ -201,8 +254,9 @@ body {
 }
 
 .btn {
-    padding: 5px 10px;
-    font-size: 16px;
+    padding: 10px 20px 12px;
+    font-size: 18px;
+    font-weight: 500;
     font-family: "Inter", serif;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -229,4 +283,14 @@ body {
 
 .btn.btn-black:hover {
     background-color: #404040;
+}
+
+.btn.btn-light {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #d4d4d4;
+}
+
+.btn.btn-light:hover {
+    background-color: #d1d1d1;
 }
