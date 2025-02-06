@@ -40,14 +40,17 @@
             </div>
         </div>
         <div class="mobile-navbar">
-            <h1>X</h1>
+            <div class="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </div>
     </nav>
     <!-- Desktop Navbar End -->
 
     <!-- Mobile Sidebar Start -->
     <div class="side-navbar">
-        <button type="button">X</button>
         <div class="container">
             <div class="nav-links">
                 <a href="<?= BASE_URL ?>" class="nav-link">Home</a>
