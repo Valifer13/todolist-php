@@ -14,7 +14,7 @@ body {
 
 /* Navbar */
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -27,6 +27,7 @@ body {
     -o-transition: all .5s ease-in-out;
     backdrop-filter: blur(5px);
     background: rgba(255, 255, 255, .4);
+    width: 100%;
 }
 
 .icon-brand {
@@ -121,6 +122,7 @@ body {
 .side-navbar {
     display: none;
     position: fixed;
+    top: 55px;
     right: 0;
     width: 50vw;
     background-color: rgba(0, 0, 0, 1);
@@ -135,6 +137,8 @@ body {
     -moz-transition: transform .3s ease-in-out;
     -ms-transition: transform .3s ease-in-out;
     -o-transition: transform .3s ease-in-out;
+    overflow: hidden;
+    padding: .7rem;
 }
 
 .side-navbar.show {
@@ -148,21 +152,24 @@ body {
 .side-navbar .nav-links {
     display: flex;
     flex-direction: column;
-    gap: 0;
-    margin-top: 50%;
-}
-
-.side-navbar .nav-links:first-child {
-    border-top: #fff 1px solid;
+    gap: .7rem;
 }
 
 .side-navbar .nav-links .nav-link {
-    color: white;
-    border-bottom: #fff 1px solid;
+    color: #adadad;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 10px;
     text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: .5em;
 }
+
+.side-navbar .nav-links .nav-link:active {
+    background-color: #404040;
+}
+
 
 @media only screen and (max-width: 460px) {
     .mobile-navbar {

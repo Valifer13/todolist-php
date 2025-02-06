@@ -53,11 +53,11 @@
     <div class="side-navbar">
         <div class="container">
             <div class="nav-links">
-                <a href="<?= BASE_URL ?>" class="nav-link">Home</a>
-                <a href="<?= BASE_URL ?>/docs" class="nav-link">Docs</a>
-                <a href="<?= BASE_URL ?>/products" class="nav-link">Products</a>
-                <a href="<?= BASE_URL ?>/about" class="nav-link">About</a>
-                <a href="<?= BASE_URL ?>/dashboard" class="nav-link">Get Started</a>
+                <a href="<?= BASE_URL ?>" class="nav-link"><img src="<?= BASE_URL ?>/img/home_icon.svg" alt="Home"><p>Home</p></a>
+                <a href="<?= BASE_URL ?>/docs" class="nav-link"><img src="<?= BASE_URL ?>/img/docs_icon.svg" alt="Docs"><p>Docs</p></a>
+                <a href="<?= BASE_URL ?>/products" class="nav-link"><img src="<?= BASE_URL ?>/img/box_icon.svg" alt="Box"><p>Products</p></a>
+                <a href="<?= BASE_URL ?>/about" class="nav-link"><img src="<?= BASE_URL ?>/img/about_icon.svg" alt="About"><p>About</p></a>
+                <a href="<?= BASE_URL ?>/dashboard" class="nav-link"><img src="<?= BASE_URL ?>/img/arrow_right.svg" alt="Arrow Right">Get Started</a>
             </div>
         </div>
     </div>
