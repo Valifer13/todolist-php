@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $data['title'] ?> Page</title>
-    <link rel="shortcut icon" href="<?= BASE_URL ?>/img/icon_light.svg" type="image/x-icon" id="tab-icon">
+    <link rel="shortcut icon" href="<?= BASE_URL ?>/img/icons/icon_light.svg" type="image/x-icon" id="tab-icon">
     <link rel="stylesheet" href="<?= BASE_URL ?>/css/style.css">
 
     <!-- Poppins Font -->
@@ -26,7 +26,7 @@
 <body>
     <!-- Desktop Navbar Start -->
     <nav class="container-fluid navbar" id="navbar">
-        <a href="<?= BASE_URL ?>" class="icon-brand"><img src="<?= BASE_URL ?>/img/icon_dark.svg" alt="icon">
+        <a href="<?= BASE_URL ?>" class="icon-brand"><img src="<?= BASE_URL ?>/img/icons/icon_dark.svg" alt="icon">
             <p>ToDoList</p>
         </a>
         <div class="desktop-navbar">
@@ -53,11 +53,11 @@
     <div class="side-navbar">
         <div class="container">
             <div class="nav-links">
-                <a href="<?= BASE_URL ?>" class="nav-link"><img src="<?= BASE_URL ?>/img/home_icon.svg" alt="Home"><p>Home</p></a>
-                <a href="<?= BASE_URL ?>/docs" class="nav-link"><img src="<?= BASE_URL ?>/img/docs_icon.svg" alt="Docs"><p>Docs</p></a>
-                <a href="<?= BASE_URL ?>/products" class="nav-link"><img src="<?= BASE_URL ?>/img/box_icon.svg" alt="Box"><p>Products</p></a>
-                <a href="<?= BASE_URL ?>/about" class="nav-link"><img src="<?= BASE_URL ?>/img/about_icon.svg" alt="About"><p>About</p></a>
-                <a href="<?= BASE_URL ?>/dashboard" class="nav-link"><img src="<?= BASE_URL ?>/img/arrow_right.svg" alt="Arrow Right">Get Started</a>
+                <a href="<?= BASE_URL ?>" class="nav-link"><img src="<?= BASE_URL ?>/img/icons/home_icon.svg" alt="Home"><p>Home</p></a>
+                <a href="<?= BASE_URL ?>/docs" class="nav-link"><img src="<?= BASE_URL ?>/img/icons/docs_icon.svg" alt="Docs"><p>Docs</p></a>
+                <a href="<?= BASE_URL ?>/products" class="nav-link"><img src="<?= BASE_URL ?>/img/icons/box_icon.svg" alt="Box"><p>Products</p></a>
+                <a href="<?= BASE_URL ?>/about" class="nav-link"><img src="<?= BASE_URL ?>/img/icons/about_icon.svg" alt="About"><p>About</p></a>
+                <a href="<?= BASE_URL ?>/dashboard" class="nav-link"><img src="<?= BASE_URL ?>/img/icons/arrow_right.svg" alt="Arrow Right">Get Started</a>
             </div>
         </div>
     </div>
