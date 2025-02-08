@@ -247,6 +247,52 @@ body {
     box-shadow: 0 3px 10px 3px #8d8d8d;
 }
 
+/** Login Form */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #657F8E, #1C2428);
+}
+
+.login-page .login-form {
+    background-color: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 0 0 5px 2px #333;
+    padding: 3rem 4rem;
+}
+
+.login-page .login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.login-page .login-form .field {
+    display: flex;
+}
+
+.login-page .login-form .field .input-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #555;
+}
+
+.login-page .login-form .field .input-text input:focus {
+    color: #3D88B4;
+}
+
+.login-page .login-form .field .input-text label::after {
+    content: " *";
+}
+
+
 /** Operation in Mobile View */
 @media only screen and (max-width: 460px) {
     .mobile-navbar {
